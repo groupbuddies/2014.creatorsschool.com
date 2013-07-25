@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Futura LT"; }
+
+header {
+  width: 100%; }
+
+b {
+  font-weight: 600; }
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+  text-align: left;
+  color: #04a5af; }
+
+h1, h2, h3 {
+  color: #5b8d90;
+  text-align: left; }
+
+img {
+  max-width: 100%; }
+
+.cta {
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  display: block;
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #ff7d7d;
+  color: white;
+  font-size: 1.2em; }
+  .cta:hover {
+    background-color: #fb5555; }
+
+.top-color {
+  height: 10px;
+  width: 100%;
+  background-color: #04a5af;
+  margin-bottom: 50px; }
+
+.logo {
+  margin-left: 1%;
+  vertical-align: top;
+  text-align: left;
+  width: 72%;
+  display: inline-block; }
+
+.secondary-info {
+  vertical-align: top;
+  width: 20%;
+  display: inline-block; }
+  .secondary-info h1 {
+    font-size: 1.3em;
+    text-align: left; }
+  .secondary-info h2 {
+    font-size: 0.9em;
+    text-align: left;
+    color: #04a5af; }
+
+.main {
+  margin-top: 50px; }
+  .main .uvp {
+    margin-left: 1%; }
+    .main .uvp h1 {
+      font-size: 200%; }
+    .main .uvp h3 {
+      font-weight: 400;
+      font-size: 150%; }
+
+.column {
+  width: 22%;
+  margin-right: 2%;
+  display: inline-block;
+  vertical-align: top; }
+  .column:last-child {
+    margin-right: 0px; }
+
+.teacher {
+  background-color: white; }
+
+.classes {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 1%; }
+  .classes .big-icon {
+    background-color: #d2e7e8;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center; }
+    .classes .big-icon img {
+      padding-top: 20px; }
+  .classes h1 {
+    font-size: 120%;
+    margin-top: 20px; }
+  .classes p {
+    margin-top: 10px;
+    font-size: 100%; }
+
+.main-info {
+  width: 100%;
+  overflow: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #62818d; }
+  .main-info .information {
+    margin: 0 2%;
+    display: inline-block;
+    vertical-align: top; }
+    .main-info .information h1 {
+      font-size: 1.5em;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #36d8b4;
+      color: white; }
+    .main-info .information h3 {
+      color: white;
+      font-size: 1.2em; }
+    .main-info .information p {
+      color: #d2e7e8;
+      font-size: 120%; }
+
+.event {
+  width: 40%; }
+
+.goals {
+  width: 50%; }
+
+.team {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #d2e7e8;
+  width: 100%; }
+  .team h1 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #36d8b4;
+    padding-bottom: 10px; }
+  .team .teachers {
+    width: 98%;
+    margin-left: 1%; }
+    .team .teachers h2 {
+      padding: 10px;
+      font-size: 1em; }
+    .team .teachers p, .team .teachers span {
+      padding: 10px; }
+    .team .teachers .image {
+      text-align: center;
+      width: 100%;
+      height: 100%; }
+    .team .teachers .twitter {
+      color: #79d8de; }
