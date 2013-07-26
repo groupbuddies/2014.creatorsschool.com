@@ -1,0 +1,22 @@
+=for-phone()
+  @media only screen and (max-width : $phone-width)
+    @content
+
+=for-tablet()
+  @media only screen and (min-width : $phone-width) and (max-width : $tablet-width)
+    @content
+$phone-width: 400px
+$tablet-width: 800px
+$primary-color: #5B8D90
+$secondary-color: #04A5AF
+
+@mixin block-base
+  clear: left
+  margin: 4% 2%
+  padding: 0
+  overflow: auto
+
+@mixin heading-style($size, $weight, $height)
+  font-size: $size
+  font-weight: $weight
+  line-height: $height

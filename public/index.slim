@@ -9,6 +9,8 @@ html
     meta encoding="utf-8"
     link rel="stylesheet" type="text/css" href="css/styles.css"
     script type="text/javascript" src="//use.typekit.net/njv6gzd.js"
+    javascript:
+      try{Typekit.load();}catch(e){}
 
   body
     header
@@ -19,7 +21,7 @@ html
         .small-block
           h1 18 a 30 de Setembro
           h2 Universidade do Minho, Braga
-          a.cta href="http://creatorsschool-es2.eventbrite.com/?rank=1" Inscreve-te aqui
+          a.button href="http://creatorsschool-es2.eventbrite.com/?rank=1" Inscreve-te aqui
     section.main
       .uvp
         h1 Aprende a fazer, fazendo.
@@ -47,15 +49,19 @@ html
           p Aprende a gerir um produto, desde a sua conceção até ao sucesso.
       section.main-info
         .container
-          .small-block
+          .big-block
             h1 Informações
-            h3 Data
-            p 18 a 30 de Setembro
-            h3 Local
-            p Universidade do Minho, Braga
-            h3 Preço
-            p Desde 100€ (máx. 15 pessoas)
-            a.cta href="http://creatorsschool-es2.eventbrite.com/?rank=1" Inscreve-te aqui
+            .map
+              img src="images/map.png"
+            .information
+              h3 Data
+              p 18 a 30 de Setembro
+              h3 Local
+              img src="images/map-icon.png"
+              a.link-map href="https://maps.google.pt/maps?daddr=41.5586,-8.397799&hl=en&sll=41.558207,-8.397637&sspn=0.002429,0.004823&mra=mift&mrsp=1&sz=18&t=m&z=18" Universidade do Minho, Braga
+              h3 Preço
+              p Desde 100€ (máx. 15 pessoas)
+              a.button href="http://creatorsschool-es2.eventbrite.com/?rank=1" Inscreve-te aqui
           .big-block
             h1 Objectivos
             p Este programa tem como objectivo ensinar-te a <b>construir um protótipo da tua  aplicação web</b>, guiando-te desde a fase de concepção da ideia até à implementação da mesma.  Serás envolvido num processo emersivo de aprendizagem, onde a <b>prática</b> será a   metodologia mais usada. Deverás aprender a criar um back-end em Ruby-on-Rails, ser  introduzido ao desenvolvimento em front-end, adquirir os conceitos-chave do Web Design e   gerir o desenvolvimento e crescimento do produto. <p> Vais também conseguir distinguir os   problemas que valem a pena ser resolvidos, bem como identificar e refinar modelos de negócio  sustentáveis. <p>Em suma, tudo aquilo que precisas para iniciar o teu próprio projecto Web.
