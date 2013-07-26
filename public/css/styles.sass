@@ -31,6 +31,8 @@
   .big-block
     width: 48%
     float: left
+    +for-phone
+      width: 90%
     img
       +for-phone
         margin: auto
@@ -45,9 +47,18 @@
       display: none
     h1
       font-size: 1.5em
-    h2
-      font-size: 1em
+    .link-map
       color: $secondary-color
+      display: inline-block
+      line-height: 100%
+      vertical-align: middle
+      text-decoration: none
+      line-height: 1.5em
+      padding-left: 30px
+      background: url("/images/map-icon.png") no-repeat
+      &:hover
+        color: #A7E7EA
+
 
 
 .main
@@ -117,6 +128,8 @@
       color: #D2E7E8
     .big-block
       margin-left: 4%
+      +for-phone
+        margin-left: 0
       &:first-child
         margin-left: 0
       .information
@@ -134,7 +147,11 @@
           &:hover
             color: #A7E7EA
       .map
-        width: 44%
+        width: 36%
+        height: 200px
+        display: block
+        background: url('/images/map.png') no-repeat center
+        background-size: cover
         float: left
         background-color: #fff
         +for-phone
@@ -180,11 +197,23 @@
   h2
     @include heading-style(1.2em, 600, 1em)
     padding-left: 10px
+    +for-phone
+      text-align: center
+      padding-top: 10px
+    +for-tablet
+      text-align: center
+      padding-top: 10px
   .teacher
     padding-bottom: 2%
     background-color: #fff
-    p, span
+    p
       padding: 10px
+      +for-tablet
+        padding-left: 15%
+        width: 70%
+      +for-phone
+        padding-left: 25%
+        width: 50%
   .image
     text-align: center
     width: 100%
@@ -192,12 +221,37 @@
   .twitter
     color: #79D8DE
     text-decoration: none
+    display: block
     &:hover
       color: #86F5FC
     img
       margin-left: 2%
       line-height: 100%
       vertical-align: middle
+    +for-phone
+      margin-left: 25%
+    span
+      padding-left: 10px
 
-
+.footer
+  background-color: $secondary-color
+  height: 100%
+  padding-top: 1%
+  .single-column
+    a
+      margin: 0 auto
+    .contact
+      background-color: #36D8B4
+      &:hover
+        background-color: #38E3BD
+    .social
+      display: block
+      text-align: center
+      text-decoration: none
+      color: #79D8DE
+      padding-top: 10px
+      &:hover
+        color: #86F5FC
+  p
+    color: #fff
 

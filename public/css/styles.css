@@ -53,7 +53,10 @@ img {
   .container .big-block {
     width: 48%;
     float: left; }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 360px) {
+      .container .big-block {
+        width: 90%; } }
+    @media only screen and (max-width: 360px) {
       .container .big-block img {
         margin: auto;
         width: 96%;
@@ -62,18 +65,26 @@ img {
     width: 22%;
     margin-left: 30%;
     float: left; }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 360px) {
       .container .small-block {
         display: none; } }
     .container .small-block h1 {
       font-size: 1.5em; }
-    .container .small-block h2 {
-      font-size: 1em;
-      color: #04a5af; }
+    .container .small-block .link-map {
+      color: #04a5af;
+      display: inline-block;
+      line-height: 100%;
+      vertical-align: middle;
+      text-decoration: none;
+      line-height: 1.5em;
+      padding-left: 30px;
+      background: url("/images/map-icon.png") no-repeat; }
+      .container .small-block .link-map:hover {
+        color: #a7e7ea; }
 
 .main .uvp {
   margin: 4% 0 0 2%; }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 360px) {
     .main .uvp {
       margin-left: 2%; } }
   .main .uvp h1 {
@@ -97,7 +108,7 @@ img {
     width: 22%;
     float: left;
     vertical-align: top; }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 360px) {
       .four-columns .single-column {
         float: none;
         width: 96%;
@@ -111,11 +122,11 @@ img {
       height: 100px;
       margin-top: 10px;
       text-align: center; }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 360px) {
         .four-columns .single-column .big-icon {
           margin: auto;
           margin-top: 50px; } }
-      @media only screen and (min-width: 400px) and (max-width: 800px) {
+      @media only screen and (min-width: 360px) and (max-width: 768px) {
         .four-columns .single-column .big-icon {
           margin: auto; } }
       .four-columns .single-column .big-icon img {
@@ -154,16 +165,19 @@ img {
       color: #d2e7e8; }
     .main-info .container .big-block {
       margin-left: 4%; }
+      @media only screen and (max-width: 360px) {
+        .main-info .container .big-block {
+          margin-left: 0; } }
       .main-info .container .big-block:first-child {
         margin-left: 0; }
       .main-info .container .big-block .information {
         margin-top: -25px;
         margin-left: 4%;
         float: left; }
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 360px) {
           .main-info .container .big-block .information {
             margin-left: 0; } }
-        @media only screen and (min-width: 400px) and (max-width: 800px) {
+        @media only screen and (min-width: 360px) and (max-width: 768px) {
           .main-info .container .big-block .information {
             margin-left: 0; } }
         .main-info .container .big-block .information .link-map {
@@ -173,13 +187,17 @@ img {
           .main-info .container .big-block .information .link-map:hover {
             color: #a7e7ea; }
       .main-info .container .big-block .map {
-        width: 44%;
+        width: 36%;
+        height: 200px;
+        display: block;
+        background: url("/images/map.png") no-repeat center;
+        background-size: cover;
         float: left;
         background-color: white; }
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 360px) {
           .main-info .container .big-block .map {
             display: none; } }
-        @media only screen and (min-width: 400px) and (max-width: 800px) {
+        @media only screen and (min-width: 360px) and (max-width: 768px) {
           .main-info .container .big-block .map {
             display: none; } }
 
@@ -193,12 +211,12 @@ img {
     width: 30.5%;
     float: left;
     vertical-align: top; }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 360px) {
       .three-columns .single-column {
         float: none;
         width: 96%;
         margin: 0 0 0 2%; } }
-    @media only screen and (min-width: 400px) and (max-width: 800px) {
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
       .three-columns .single-column {
         float: none;
         width: 90%;
@@ -229,21 +247,64 @@ img {
     font-weight: 600;
     line-height: 1em;
     padding-left: 10px; }
+    @media only screen and (max-width: 360px) {
+      .team h2 {
+        text-align: center;
+        padding-top: 10px; } }
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+      .team h2 {
+        text-align: center;
+        padding-top: 10px; } }
   .team .teacher {
     padding-bottom: 2%;
     background-color: white; }
-    .team .teacher p, .team .teacher span {
+    .team .teacher p {
       padding: 10px; }
+      @media only screen and (min-width: 360px) and (max-width: 768px) {
+        .team .teacher p {
+          padding-left: 15%;
+          width: 70%; } }
+      @media only screen and (max-width: 360px) {
+        .team .teacher p {
+          padding-left: 25%;
+          width: 50%; } }
   .team .image {
     text-align: center;
     width: 100%;
     height: 100%; }
   .team .twitter {
     color: #79d8de;
-    text-decoration: none; }
+    text-decoration: none;
+    display: block; }
     .team .twitter:hover {
       color: #86f5fc; }
     .team .twitter img {
       margin-left: 2%;
       line-height: 100%;
       vertical-align: middle; }
+    @media only screen and (max-width: 360px) {
+      .team .twitter {
+        margin-left: 25%; } }
+    .team .twitter span {
+      padding-left: 10px; }
+
+.footer {
+  background-color: #04a5af;
+  height: 100%;
+  padding-top: 1%; }
+  .footer .single-column a {
+    margin: 0 auto; }
+  .footer .single-column .contact {
+    background-color: #36d8b4; }
+    .footer .single-column .contact:hover {
+      background-color: #38e3bd; }
+  .footer .single-column .social {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #79d8de;
+    padding-top: 10px; }
+    .footer .single-column .social:hover {
+      color: #86f5fc; }
+  .footer p {
+    color: white; }
