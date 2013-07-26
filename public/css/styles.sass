@@ -34,6 +34,7 @@ img
   background-color: #FF7D7D
   color: #fff
   font-size: 1.2em
+  text-decoration: none
   &:hover
     background-color: #FB5555
 
@@ -41,115 +42,157 @@ img
   height: 10px
   width: 100%
   background-color: #04A5AF
-  margin-bottom: 50px
 
-.logo
-  margin-left: 1%
-  vertical-align: top
-  text-align: left
-  width: 72%
-  display: inline-block
+.container
+  margin: 2% 0 0 2%
+  height: 160px
+  background-color: #fff
+  width: 96%
+  .big-block
+    width: 48%
+    height: 100%
+    float: left
+  .small-block
+    width: 22%
+    height: 100%
+    margin-left: 30%
+    float: left
+    h1
+      font-size: 1.5em
+      text-align: left
+    h2
+      font-size: 1em
+      text-align: left
+      color: #04A5AF
 
-.secondary-info
-  vertical-align: top
-  width: 20%
-  display: inline-block
-  h1
-    font-size: 1.3em
-    text-align: left
-  h2
-    font-size: 0.9em
-    text-align: left
-    color: #04A5AF
 
 .main
-  margin-top: 50px
   .uvp
-    margin-left: 1%
+    margin: 4% 0 0 2%
     h1
+      text-align: center
       font-size: 200%
+      line-height: 1em
     h3
+      text-align: center
       font-weight: 400
       font-size: 150%
 
-
-.column
-  width: 22%
-  margin-right: 2%
-  display: inline-block
-  vertical-align: top
-  &:last-child
-    margin-right: 0px
-.teacher
-  background-color: #fff
-
-.classes
-  margin-top: 50px
-  padding-bottom: 50px
-  margin-left: 1%
-  .big-icon
-    background-color: #D2E7E8
-    border-radius: 100px
-    width: 100px
-    height: 100px
-    margin: auto
-    margin-top: 10px
-    text-align: center
-    img
-      padding-top: 20px
-  h1
-    font-size: 120%
-    margin-top: 20px
-  p
-    margin-top: 10px
-    font-size: 100%
+.four-columns
+  clear: left
+  margin: 4% 2%
+  padding: 0
+  overflow: auto
+  .single-column
+    margin-right: 4%
+    width: 22%
+    float: left
+    vertical-align: top
+    &:last-child
+      margin-right: 0
+    .big-icon
+      background-color: #D2E7E8
+      border-radius: 100px
+      width: 100px
+      height: 100px
+      margin-top: 10px
+      text-align: center
+      img
+        padding-top: 20px
+    h1
+      font-size: 120%
+      margin-top: 20px
+    p
+      margin-top: 10px
+      font-size: 100%
+      line-height: 180%
 
 .main-info
-  width: 100%
   overflow: auto
-  padding-top: 50px
-  padding-bottom: 50px
+  width: 100%
+  text-align: center
   background-color: #62818D
-  .information
-    margin: 0 2%
-    display: inline-block
-    vertical-align: top
+  padding-bottom: 4%
+  .container
+    background-color: none
+    height: 100%
     h1
-      font-size: 1.5em
+      color: #fff
+      font-size: 150%
       padding-bottom: 10px
       border-bottom: 1px solid #36D8B4
-      color: #fff
     h3
       color: #fff
-      font-size: 1.2em
     p
-      color: #D2E7E8
       font-size: 120%
-.event
-  width: 40%
-.goals
-  width: 50%
+      line-height: 200%
+      color: #D2E7E8
+    .small-block
+      margin-left: 0%
+    .big-block
+      margin-left: 30%
+
+
+.three-columns
+  clear: left
+  margin: 4% 2%
+  padding: 0
+  overflow: auto
+  .single-column
+    margin-right: 4%
+    width: 30.5%
+    float: left
+    vertical-align: top
+    &:last-child
+      margin-right: 0
+    .big-icon
+      background-color: #D2E7E8
+      border-radius: 100px
+      width: 100px
+      height: 100px
+      margin: auto
+      margin-top: 10px
+      text-align: center
+      img
+        padding-top: 20px
+    h1
+      font-size: 120%
+      margin-top: 20px
+    p
+      margin-top: 10px
+      font-size: 100%
+      line-height: 180%
+
 
 .team
-  padding-top: 50px
-  padding-bottom: 50px
   background-color: #D2E7E8
   width: 100%
+  overflow: auto
+  padding: 0
   h1
-    font-size: 1.5em
     border-bottom: 1px solid #36D8B4
     padding-bottom: 10px
-  .teachers
-    width: 98%
-    margin-left: 1%
-    h2
-      padding: 10px
-      font-size: 1em
-    p, span
-      padding: 10px
-    .image
-      text-align: center
-      width: 100%
-      height: 100%
-    .twitter
-      color: #79D8DE
+  h2
+    padding-left: 10px
+    font-size: 1em
+  p, span
+    padding: 10px
+  .teacher
+    padding-bottom: 2%
+    background-color: #fff
+  .image
+    text-align: center
+    width: 100%
+    height: 100%
+  .twitter
+    color: #79D8DE
+    text-decoration: none
+    &:hover
+      color: #86F5FC
+    img
+      margin-left: 2%
+      line-height: 100%
+      vertical-align: middle
+
+
+

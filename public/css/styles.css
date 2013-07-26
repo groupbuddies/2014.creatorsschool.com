@@ -34,125 +34,159 @@ img {
   border-radius: 4px;
   background-color: #ff7d7d;
   color: white;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  text-decoration: none; }
   .cta:hover {
     background-color: #fb5555; }
 
 .top-color {
   height: 10px;
   width: 100%;
-  background-color: #04a5af;
-  margin-bottom: 50px; }
+  background-color: #04a5af; }
 
-.logo {
-  margin-left: 1%;
-  vertical-align: top;
-  text-align: left;
-  width: 72%;
-  display: inline-block; }
+.container {
+  margin: 2% 0 0 2%;
+  height: 160px;
+  background-color: white;
+  width: 96%; }
+  .container .big-block {
+    width: 48%;
+    height: 100%;
+    float: left; }
+  .container .small-block {
+    width: 22%;
+    height: 100%;
+    margin-left: 30%;
+    float: left; }
+    .container .small-block h1 {
+      font-size: 1.5em;
+      text-align: left; }
+    .container .small-block h2 {
+      font-size: 1em;
+      text-align: left;
+      color: #04a5af; }
 
-.secondary-info {
-  vertical-align: top;
-  width: 20%;
-  display: inline-block; }
-  .secondary-info h1 {
-    font-size: 1.3em;
-    text-align: left; }
-  .secondary-info h2 {
-    font-size: 0.9em;
-    text-align: left;
-    color: #04a5af; }
+.main .uvp {
+  margin: 4% 0 0 2%; }
+  .main .uvp h1 {
+    text-align: center;
+    font-size: 200%;
+    line-height: 1em; }
+  .main .uvp h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 150%; }
 
-.main {
-  margin-top: 50px; }
-  .main .uvp {
-    margin-left: 1%; }
-    .main .uvp h1 {
-      font-size: 200%; }
-    .main .uvp h3 {
-      font-weight: 400;
-      font-size: 150%; }
-
-.column {
-  width: 22%;
-  margin-right: 2%;
-  display: inline-block;
-  vertical-align: top; }
-  .column:last-child {
-    margin-right: 0px; }
-
-.teacher {
-  background-color: white; }
-
-.classes {
-  margin-top: 50px;
-  padding-bottom: 50px;
-  margin-left: 1%; }
-  .classes .big-icon {
-    background-color: #d2e7e8;
-    border-radius: 100px;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    margin-top: 10px;
-    text-align: center; }
-    .classes .big-icon img {
-      padding-top: 20px; }
-  .classes h1 {
-    font-size: 120%;
-    margin-top: 20px; }
-  .classes p {
-    margin-top: 10px;
-    font-size: 100%; }
+.four-columns {
+  clear: left;
+  margin: 4% 2%;
+  padding: 0;
+  overflow: auto; }
+  .four-columns .single-column {
+    margin-right: 4%;
+    width: 22%;
+    float: left;
+    vertical-align: top; }
+    .four-columns .single-column:last-child {
+      margin-right: 0; }
+    .four-columns .single-column .big-icon {
+      background-color: #d2e7e8;
+      border-radius: 100px;
+      width: 100px;
+      height: 100px;
+      margin-top: 10px;
+      text-align: center; }
+      .four-columns .single-column .big-icon img {
+        padding-top: 20px; }
+    .four-columns .single-column h1 {
+      font-size: 120%;
+      margin-top: 20px; }
+    .four-columns .single-column p {
+      margin-top: 10px;
+      font-size: 100%;
+      line-height: 180%; }
 
 .main-info {
-  width: 100%;
   overflow: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #62818d; }
-  .main-info .information {
-    margin: 0 2%;
-    display: inline-block;
-    vertical-align: top; }
-    .main-info .information h1 {
-      font-size: 1.5em;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #36d8b4;
-      color: white; }
-    .main-info .information h3 {
+  width: 100%;
+  text-align: center;
+  background-color: #62818d;
+  padding-bottom: 4%; }
+  .main-info .container {
+    background-color: none;
+    height: 100%; }
+    .main-info .container h1 {
       color: white;
-      font-size: 1.2em; }
-    .main-info .information p {
-      color: #d2e7e8;
-      font-size: 120%; }
+      font-size: 150%;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #36d8b4; }
+    .main-info .container h3 {
+      color: white; }
+    .main-info .container p {
+      font-size: 120%;
+      line-height: 200%;
+      color: #d2e7e8; }
+    .main-info .container .small-block {
+      margin-left: 0%; }
+    .main-info .container .big-block {
+      margin-left: 30%; }
 
-.event {
-  width: 40%; }
-
-.goals {
-  width: 50%; }
+.three-columns {
+  clear: left;
+  margin: 4% 2%;
+  padding: 0;
+  overflow: auto; }
+  .three-columns .single-column {
+    margin-right: 4%;
+    width: 30.5%;
+    float: left;
+    vertical-align: top; }
+    .three-columns .single-column:last-child {
+      margin-right: 0; }
+    .three-columns .single-column .big-icon {
+      background-color: #d2e7e8;
+      border-radius: 100px;
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      margin-top: 10px;
+      text-align: center; }
+      .three-columns .single-column .big-icon img {
+        padding-top: 20px; }
+    .three-columns .single-column h1 {
+      font-size: 120%;
+      margin-top: 20px; }
+    .three-columns .single-column p {
+      margin-top: 10px;
+      font-size: 100%;
+      line-height: 180%; }
 
 .team {
-  padding-top: 50px;
-  padding-bottom: 50px;
   background-color: #d2e7e8;
-  width: 100%; }
+  width: 100%;
+  overflow: auto;
+  padding: 0; }
   .team h1 {
-    font-size: 1.5em;
     border-bottom: 1px solid #36d8b4;
     padding-bottom: 10px; }
-  .team .teachers {
-    width: 98%;
-    margin-left: 1%; }
-    .team .teachers h2 {
-      padding: 10px;
-      font-size: 1em; }
-    .team .teachers p, .team .teachers span {
-      padding: 10px; }
-    .team .teachers .image {
-      text-align: center;
-      width: 100%;
-      height: 100%; }
-    .team .teachers .twitter {
-      color: #79d8de; }
+  .team h2 {
+    padding-left: 10px;
+    font-size: 1em; }
+  .team p, .team span {
+    padding: 10px; }
+  .team .teacher {
+    padding-bottom: 2%;
+    background-color: white; }
+  .team .image {
+    text-align: center;
+    width: 100%;
+    height: 100%; }
+  .team .twitter {
+    color: #79d8de;
+    text-decoration: none; }
+    .team .twitter:hover {
+      color: #86f5fc; }
+    .team .twitter img {
+      margin-left: 2%;
+      line-height: 100%;
+      vertical-align: middle; }

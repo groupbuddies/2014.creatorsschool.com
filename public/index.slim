@@ -8,80 +8,108 @@ html
     meta name="author" content="Group Buddies"
     meta encoding="utf-8"
     link rel="stylesheet" type="text/css" href="css/styles.css"
+    script type="text/javascript" src="//use.typekit.net/njv6gzd.js"
+    script type="text/javascript" try{Typekit.load();}catch(e){}
 
   body
     header
       .top-color
-      .logo
-        img src="images/logo.png"
-      .secondary-info
-        h1 18 a 30 de Setembro
-        h2 Factory Business Center, Braga
-        a.cta Inscreve-te aqui
+      .container
+        .big-block
+          img src="images/logo.png"
+        .small-block
+          h1 18 a 30 de Setembro
+          h2 Universidade do Minho, Braga
+          a.cta href="http://creatorsschool-es2.eventbrite.com/?rank=1" Inscreve-te aqui
     section.main
       .uvp
         h1 Aprende a fazer, fazendo.
         h3 Para quem quer pensar, desenhar e programar para a Web.
-      section.classes
-        .column
+      section.four-columns
+        .single-column
           .big-icon
             img src="images/web-icon.png"
           h1 Web Design
           p Aprende a desenhar para a Web, a ser eficaz na tua abordagem e a atrair as atenções todas para o produto.
-        .column
+        .single-column
           .big-icon
             img src="images/dev-icon.png"
           h1 Web Development
           p Aprende a desenhar para a Web, a ser eficaz na tua abordagem e a atrair as atenções todas para o produto.
-        .column
+        .single-column
           .big-icon
             img src="images/biz-icon.png"
           h1 Business Development
           p Aprende a desenhar para a Web, a ser eficaz na tua abordagem e a atrair as atenções todas para o produto.
-        .column
+        .single-column
           .big-icon
             img src="images/product-icon.png"
           h1 Product Development
           p Aprende a gerir um produto, desde a sua conceção até ao sucesso.
       section.main-info
-        .information.event
-          h1 Informações
-          h3 Data
-          p 18 a 30 de Setembro
-          h3 Local
-          p Factory Business Center, Braga
-          h3 Preço
-          p Desde 100€ (máx. 15 pessoas)
-          a.cta Inscreve-te aqui
-        .information.goals
-          h1 Objectivos
-          p Este programa tem como objectivo ensinar-te a <b>construir um protótipo da tua aplicação web</b>, guiando-te desde a fase de concepção da ideia até à implementação da mesma. Serás envolvido num processo emersivo de aprendizagem, onde a <b>prática</b> será a metodologia mais usada. Deverás aprender a criar um back-end em Ruby-on-Rails, ser introduzido ao desenvolvimento em front-end, adquirir os conceitos-chave do Web Design e gerir o desenvolvimento e crescimento do produto. <p> Vais também conseguir distinguir os problemas que valem a pena ser resolvidos, bem como identificar e refinar modelos de negócio sustentáveis. <p>Em suma, tudo aquilo que precisas para iniciar o teu próprio projecto Web.
+        .container
+          .small-block
+            h1 Informações
+            h3 Data
+            p 18 a 30 de Setembro
+            h3 Local
+            p Universidade do Minho, Braga
+            h3 Preço
+            p Desde 100€ (máx. 15 pessoas)
+            a.cta href="http://creatorsschool-es2.eventbrite.com/?rank=1" Inscreve-te aqui
+          .big-block
+            h1 Objectivos
+            p Este programa tem como objectivo ensinar-te a <b>construir um protótipo da tua  aplicação web</b>, guiando-te desde a fase de concepção da ideia até à implementação da mesma.  Serás envolvido num processo emersivo de aprendizagem, onde a <b>prática</b> será a   metodologia mais usada. Deverás aprender a criar um back-end em Ruby-on-Rails, ser  introduzido ao desenvolvimento em front-end, adquirir os conceitos-chave do Web Design e   gerir o desenvolvimento e crescimento do produto. <p> Vais também conseguir distinguir os   problemas que valem a pena ser resolvidos, bem como identificar e refinar modelos de negócio  sustentáveis. <p>Em suma, tudo aquilo que precisas para iniciar o teu próprio projecto Web.
       section.team
-        .teachers
+        .three-columns
           h1 Equipa
-          .column.teacher
-            h2 Roberto Machado
-            .image
-              img src="images/roberto.png"
-            p Como CEO da GroupBuddies, tem a oportunidade de gerir um grupo fantástico de profissionais dedicados à criação de produtos Web.
-            a.twitter
-              span.social-link @rdmgb
-          .column.teacher
-            h2 Tiago Sequeira
-            .image
-            p Como CEO da GroupBuddies, tem a oportunidade de gerir um grupo fantástico de profissionais dedicados à criação de produtos Web.
-            a.twitter
-              span.social-link @tgsequeira
-          .column.teacher
-            h2 Luis Zamith
-            .image
-            p Como CEO da GroupBuddies, tem a oportunidade de gerir um grupo fantástico de profissionais dedicados à criação de produtos Web.
-            a.twitter
-              span.social-link @zamith
-          .column.teacher
+          .single-column.teacher
+              h2 Alexandre Mendes
+              .image
+                img src="images/alexandre.png"
+              p Como CEO da GroupBuddies, tem a oportunidade de gerir um grupo fantástico de  profissionais dedicados à criação de produtos Web.
+              a.twitter
+                img src="images/twitter.png"
+                span.social-link @rdmgb
+          .single-column.teacher
             h2 João Ferreira
             .image
               img src="images/joao.png"
-            p Como CEO da GroupBuddies, tem a oportunidade de gerir um grupo fantástico de profissionais dedicados à criação de produtos Web.
-            a.twitter
+            p Web Designer na GroupBuddies e Pós-Graduado em Web Design pela ESAD, desenvolveu uma paixão por software e produtos Web, estando envolvido directamente em projectos como o CoachMe, inSpace Jobs, cohive e Roundabet.
+            a.twitter href="https://twitter.com/jferreiradzn"
+              img src="images/twitter.png"
               span.social-link @jferreiradzn
+          .single-column.teacher
+            h2 Luis Zamith
+            .image
+              img src="images/zamith.png"
+            p Como CEO da GroupBuddies, tem a oportunidade de gerir um grupo fantástico de  profissionais dedicados à criação de produtos Web.
+            a.twitter href="https://twitter.com/Zamith"
+              img src="images/twitter.png"
+              span.social-link @zamith
+        .three-columns
+          .single-column.teacher
+              h2 Alexandre Mendes
+              .image
+                img src="images/roberto.png"
+              p Como CEO da GroupBuddies, tem a oportunidade de gerir um grupo fantástico de  profissionais dedicados à criação de produtos Web.
+              a.twitter href="https://twitter.com/rmdgb"
+                img src="images/twitter.png"
+                span.social-link @rdmgb
+          .single-column.teacher
+              h2 Ronaldo Sousa
+              .image
+                img src="images/ronaldo.png"
+              p Como CEO da GroupBuddies, tem a oportunidade de gerir um grupo fantástico de  profissionais dedicados à criação de produtos Web.
+              a.twitter
+                img src="images/twitter.png"
+                span.social-link @rdmgb
+          .single-column.teacher
+            h2 Tiago Sequeira
+            .image
+              img src="images/tiago.png"
+            p Fundador do Factory, um espaço de CoWork em Braga, palco de vários eventos relacionados com o empreendedorismo, incluindo o evento de networking que ele co-criou, So You Think You Can Pitch. É também co-criador de 2 eventos musicais emergentes, Ponte Party People e o Festival Semibreve.
+            a.twitter href=""
+              img src="images/twitter.png"
+              span.social-link @tgsequeira
+
