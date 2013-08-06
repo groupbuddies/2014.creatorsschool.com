@@ -8,7 +8,7 @@
   vertical-align: middle
   display: block
   margin-top: 20px
-  width: 200px
+  width: 240px
   height: 50px
   border-radius: 4px
   background-color: #FF7D7D
@@ -24,7 +24,8 @@
   background-color: $secondary-color
 
 .container
-  margin: 2% 0 0 2%
+  max-width: 1200px
+  margin: auto
   height: 160px
   background-color: #fff
   width: 96%
@@ -73,7 +74,11 @@
       @include heading-style(1.5em, 400, 1em)
       text-align: center
 
-.four-columns
+.wrapper
+  max-width: 1200px
+  margin: auto
+
+.classes
   @include block-base
   .single-column
     margin-right: 4%
@@ -206,8 +211,11 @@
   .teacher
     padding-bottom: 2%
     background-color: #fff
+    h2
+      padding-left: 20px
     p
-      padding: 10px
+      padding: 20px
+      font-size: 18px
       +for-tablet
         padding-left: 15%
         width: 70%
@@ -220,6 +228,7 @@
     height: 100%
   .twitter
     color: #79D8DE
+    padding: 10px
     text-decoration: none
     display: block
     &:hover
@@ -232,6 +241,33 @@
       margin-left: 25%
     span
       padding-left: 10px
+
+.schedule
+  background-color: #fff
+  padding-bottom: 50px
+  padding-top: 50px
+  table
+    margin-bottom: 50px
+    width: 64%
+    th, tr, td
+      text-align: center
+      padding: 10px
+      color: #fff
+    th
+      color: #04A5AF
+    td
+      width: 100px
+      height: 60px
+    .product
+      background-color: #2A9ADF
+    .business
+      background-color: #36D8B4
+    .others
+      background-color: #ECBB68
+    .design
+      background-color: #57E0E8
+    .development
+      background-color: #62C0C6
 
 .footer
   background-color: $secondary-color
@@ -254,4 +290,6 @@
         color: #86F5FC
   p
     color: #fff
+
+
 

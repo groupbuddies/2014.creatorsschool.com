@@ -30,7 +30,7 @@ img {
   vertical-align: middle;
   display: block;
   margin-top: 20px;
-  width: 200px;
+  width: 240px;
   height: 50px;
   border-radius: 4px;
   background-color: #ff7d7d;
@@ -46,7 +46,8 @@ img {
   background-color: #04a5af; }
 
 .container {
-  margin: 2% 0 0 2%;
+  max-width: 1200px;
+  margin: auto;
   height: 160px;
   background-color: white;
   width: 96%; }
@@ -98,24 +99,28 @@ img {
     line-height: 1em;
     text-align: center; }
 
-.four-columns {
+.wrapper {
+  max-width: 1200px;
+  margin: auto; }
+
+.classes {
   clear: left;
   margin: 4% 2%;
   padding: 0;
   overflow: auto; }
-  .four-columns .single-column {
+  .classes .single-column {
     margin-right: 4%;
     width: 22%;
     float: left;
     vertical-align: top; }
     @media only screen and (max-width: 360px) {
-      .four-columns .single-column {
+      .classes .single-column {
         float: none;
         width: 96%;
         margin: auto; } }
-    .four-columns .single-column:last-child {
+    .classes .single-column:last-child {
       margin-right: 0; }
-    .four-columns .single-column .big-icon {
+    .classes .single-column .big-icon {
       background-color: #d2e7e8;
       border-radius: 50%;
       width: 100px;
@@ -123,20 +128,20 @@ img {
       margin-top: 10px;
       text-align: center; }
       @media only screen and (max-width: 360px) {
-        .four-columns .single-column .big-icon {
+        .classes .single-column .big-icon {
           margin: auto;
           margin-top: 50px; } }
       @media only screen and (min-width: 360px) and (max-width: 768px) {
-        .four-columns .single-column .big-icon {
+        .classes .single-column .big-icon {
           margin: auto; } }
-      .four-columns .single-column .big-icon img {
+      .classes .single-column .big-icon img {
         padding-top: 20px; }
-    .four-columns .single-column h1 {
+    .classes .single-column h1 {
       font-size: 1.5em;
       font-weight: 600;
       line-height: 1.2em;
       margin-top: 20px; }
-    .four-columns .single-column p {
+    .classes .single-column p {
       margin-top: 10px; }
 
 .main-info {
@@ -258,8 +263,11 @@ img {
   .team .teacher {
     padding-bottom: 2%;
     background-color: white; }
+    .team .teacher h2 {
+      padding-left: 20px; }
     .team .teacher p {
-      padding: 10px; }
+      padding: 20px;
+      font-size: 18px; }
       @media only screen and (min-width: 360px) and (max-width: 768px) {
         .team .teacher p {
           padding-left: 15%;
@@ -274,6 +282,7 @@ img {
     height: 100%; }
   .team .twitter {
     color: #79d8de;
+    padding: 10px;
     text-decoration: none;
     display: block; }
     .team .twitter:hover {
@@ -287,6 +296,33 @@ img {
         margin-left: 25%; } }
     .team .twitter span {
       padding-left: 10px; }
+
+.schedule {
+  background-color: white;
+  padding-bottom: 50px;
+  padding-top: 50px; }
+  .schedule table {
+    margin-bottom: 50px;
+    width: 64%; }
+    .schedule table th, .schedule table tr, .schedule table td {
+      text-align: center;
+      padding: 10px;
+      color: white; }
+    .schedule table th {
+      color: #04a5af; }
+    .schedule table td {
+      width: 100px;
+      height: 60px; }
+    .schedule table .product {
+      background-color: #2a9adf; }
+    .schedule table .business {
+      background-color: #36d8b4; }
+    .schedule table .others {
+      background-color: #ecbb68; }
+    .schedule table .design {
+      background-color: #57e0e8; }
+    .schedule table .development {
+      background-color: #62c0c6; }
 
 .footer {
   background-color: #04a5af;
