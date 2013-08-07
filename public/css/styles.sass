@@ -74,7 +74,9 @@
       @include heading-style(1.5em, 400, 1em)
       text-align: center
 
-.wrapper
+.wrapper,
+.week-1,
+.week-2
   max-width: 1200px
   margin: auto
 
@@ -284,12 +286,18 @@
 .opening
   background-color: #ccc
 
+.week-1, .week-2
+  position: relative
+
+.class-details-box
+  display: none
+
 .class-details
   width: 30%
-  margin-left: 8%
-  display: inline-block
-  vertical-align: top
-  margin-top: 45px
+  display: block
+  position: absolute
+  top: 128px
+  right: 0
   padding: 10px 20px 10px 20px
   h1,h2,p
     border: 0px
