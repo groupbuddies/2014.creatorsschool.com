@@ -24,6 +24,15 @@ h1, h2, h3 {
 img {
   max-width: 100%; }
 
+ul {
+  padding-left: 20px;
+  font-size: 16px;
+  width: 100%;
+  color: #04a5af; }
+
+section {
+  padding-top: 50px; }
+
 .button {
   text-align: center;
   line-height: 50px;
@@ -287,6 +296,12 @@ img {
     display: block; }
     .team .twitter:hover {
       color: #86f5fc; }
+    @media only screen and (max-width: 360px) {
+      .team .twitter {
+        text-align: center; } }
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+      .team .twitter {
+        text-align: center; } }
     .team .twitter img {
       margin-left: 2%;
       line-height: 100%;
@@ -299,30 +314,70 @@ img {
 
 .schedule {
   background-color: white;
-  padding-bottom: 50px;
   padding-top: 50px; }
-  .schedule table {
-    margin-bottom: 50px;
-    width: 64%; }
-    .schedule table th, .schedule table tr, .schedule table td {
-      text-align: center;
-      padding: 10px;
-      color: white; }
-    .schedule table th {
-      color: #04a5af; }
-    .schedule table td {
-      width: 100px;
-      height: 60px; }
-    .schedule table .product {
-      background-color: #2a9adf; }
-    .schedule table .business {
-      background-color: #36d8b4; }
-    .schedule table .others {
-      background-color: #ecbb68; }
-    .schedule table .design {
-      background-color: #57e0e8; }
-    .schedule table .development {
-      background-color: #62c0c6; }
+  .schedule h1 {
+    font-size: 1.8em;
+    font-weight: 600;
+    line-height: 1.2em;
+    border-bottom: 1px solid #36d8b4;
+    padding-bottom: 10px; }
+  .schedule .schedule-table {
+    display: inline-block;
+    vertical-align: top; }
+    .schedule .schedule-table table {
+      margin-bottom: 50px;
+      width: 100%; }
+      .schedule .schedule-table table th, .schedule .schedule-table table tr, .schedule .schedule-table table td {
+        text-align: center;
+        padding: 10px;
+        color: white; }
+      .schedule .schedule-table table th {
+        color: #04a5af; }
+      .schedule .schedule-table table td {
+        width: 100px;
+        height: 60px; }
+
+.product {
+  background-color: #2a9adf; }
+
+.business {
+  background-color: #36d8b4; }
+
+.others {
+  background-color: #ecbb68; }
+
+.design {
+  background-color: #57e0e8; }
+
+.development {
+  background-color: #62c0c6; }
+
+.evaluation {
+  background-color: #ff7d7d; }
+
+.opening {
+  background-color: #cccccc; }
+
+.class-details {
+  width: 30%;
+  margin-left: 8%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 45px;
+  padding: 10px 20px 10px 20px; }
+  .class-details h1, .class-details h2, .class-details p {
+    border: 0px;
+    margin: 0px;
+    padding-top: 10px;
+    color: white; }
+  .class-details p {
+    font-weight: 200;
+    line-height: 20px;
+    font-size: 18px;
+    padding-bottom: 10px; }
+  .class-details ul {
+    color: white;
+    padding-left: 40px; }
 
 .footer {
   background-color: #04a5af;
