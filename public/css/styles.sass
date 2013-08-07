@@ -233,6 +233,10 @@
     display: block
     &:hover
       color: #86F5FC
+    +for-phone
+      text-align: center
+    +for-tablet
+      text-align: center
     img
       margin-left: 2%
       line-height: 100%
@@ -243,31 +247,64 @@
       padding-left: 10px
 
 .schedule
+  h1
+    @include heading-style(1.8em, 600, 1.2em)
+    border-bottom: 1px solid #36D8B4
+    padding-bottom: 10px
   background-color: #fff
-  padding-bottom: 50px
   padding-top: 50px
-  table
-    margin-bottom: 50px
-    width: 64%
-    th, tr, td
-      text-align: center
-      padding: 10px
-      color: #fff
-    th
-      color: #04A5AF
-    td
-      width: 100px
-      height: 60px
-    .product
-      background-color: #2A9ADF
-    .business
-      background-color: #36D8B4
-    .others
-      background-color: #ECBB68
-    .design
-      background-color: #57E0E8
-    .development
-      background-color: #62C0C6
+  .schedule-table
+    display: inline-block
+    vertical-align: top
+    table
+      margin-bottom: 50px
+      width: 100%
+      th, tr, td
+        text-align: center
+        padding: 10px
+        color: #fff
+      th
+        color: #04A5AF
+      td
+        width: 100px
+        height: 60px
+
+.product
+  background-color: #2A9ADF
+.business
+  background-color: #36D8B4
+.others
+  background-color: #ECBB68
+.design
+  background-color: #57E0E8
+.development
+  background-color: #62C0C6
+.evaluation
+  background-color: #FF7D7D
+.opening
+  background-color: #ccc
+
+.class-details
+  width: 30%
+  margin-left: 8%
+  display: inline-block
+  vertical-align: top
+  margin-top: 45px
+  padding: 10px 20px 10px 20px
+  h1,h2,p
+    border: 0px
+    margin: 0px
+    padding-top: 10px
+    color: #fff
+  p
+    font-weight: 200
+    line-height: 20px
+    font-size: 18px
+    padding-bottom: 10px
+  ul
+    color: #fff
+    padding-left: 40px
+
 
 .footer
   background-color: $secondary-color
