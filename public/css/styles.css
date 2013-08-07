@@ -109,7 +109,9 @@ section {
     line-height: 1em;
     text-align: center; }
 
-.wrapper {
+.wrapper,
+.week-1,
+.week-2 {
   max-width: 1200px;
   margin: auto; }
 
@@ -359,12 +361,18 @@ section {
 .opening {
   background-color: #cccccc; }
 
+.week-1, .week-2 {
+  position: relative; }
+
+.class-details-box {
+  display: none; }
+
 .class-details {
   width: 30%;
-  margin-left: 8%;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 45px;
+  display: block;
+  position: absolute;
+  top: 128px;
+  right: 0;
   padding: 10px 20px 10px 20px; }
   .class-details h1, .class-details h2, .class-details p {
     border: 0px;
