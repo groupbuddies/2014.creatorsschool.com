@@ -11,9 +11,9 @@ b {
   font-weight: 600; }
 
 p {
-  font-size: 1.2em;
-  font-weight: 400;
-  line-height: 1.8em;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 24px;
   text-align: left;
   color: #04a5af; }
 
@@ -27,6 +27,7 @@ img {
 ul {
   padding-left: 20px;
   font-size: 16px;
+  line-height: 20px;
   width: 100%;
   color: #04a5af; }
 
@@ -399,3 +400,10 @@ section {
       color: #86f5fc; }
   .footer p {
     color: white; }
+  .footer .cta {
+    margin: auto; }
+    .footer .cta h2 {
+      color: white;
+      text-align: center; }
+    .footer .cta .button {
+      margin: auto; }
