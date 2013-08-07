@@ -372,7 +372,14 @@ section {
   display: block;
   position: absolute;
   top: 128px;
-  right: 0;
+  right: 0; }
+
+.class-details {
+  width: 30%;
+  margin-left: 8%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 45px;
   padding: 10px 20px 10px 20px; }
   .class-details h1, .class-details h2, .class-details p {
     border: 0px;
