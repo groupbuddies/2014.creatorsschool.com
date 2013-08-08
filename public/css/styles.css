@@ -20,11 +20,8 @@ p {
 
 h1, h2, h3 {
   color: #5b8d90;
-  font-family: "Merriweather", serif;
+  font-family: "PT Serif", serif;
   text-align: left; }
-
-h1 {
-  font-family: "PT Serif", serif; }
 
 img {
   max-width: 100%; }
@@ -37,7 +34,8 @@ ul {
   color: #04a5af; }
 
 section {
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .button {
   text-align: center;
@@ -98,21 +96,23 @@ section {
       .container .small-block .link-map:hover {
         color: #a7e7ea; }
 
-.main .uvp {
-  margin: 4% 0 0 2%; }
-  @media only screen and (max-width: 360px) {
-    .main .uvp {
-      margin-left: 2%; } }
-  .main .uvp h1 {
-    font-size: 2.5em;
-    font-weight: 600;
-    line-height: 1em;
-    text-align: center; }
-  .main .uvp h3 {
-    font-size: 1.5em;
-    font-weight: 400;
-    line-height: 1em;
-    text-align: center; }
+.main {
+  padding-bottom: 0px; }
+  .main .uvp {
+    margin: 4% 0 0 2%; }
+    @media only screen and (max-width: 360px) {
+      .main .uvp {
+        margin-left: 2%; } }
+    .main .uvp h1 {
+      font-size: 2.5em;
+      font-weight: 600;
+      line-height: 1em;
+      text-align: center; }
+    .main .uvp h3 {
+      font-size: 1.5em;
+      font-weight: 400;
+      line-height: 1em;
+      text-align: center; }
 
 .wrapper,
 .week-1,
@@ -121,10 +121,10 @@ section {
   margin: auto; }
 
 .classes {
-  clear: left;
-  margin: 4% 2%;
+  margin: 20px 0;
   padding: 0;
-  overflow: auto; }
+  overflow: auto;
+  padding-bottom: 50px; }
   .classes .single-column {
     margin-right: 4%;
     width: 22%;
@@ -223,40 +223,37 @@ section {
           .main-info .container .big-block .map {
             display: none; } }
 
-.three-columns {
-  clear: left;
-  margin: 4% 2%;
+.three-columns .single-column {
+  margin: 20px 0;
   padding: 0;
-  overflow: auto; }
-  .three-columns .single-column {
-    margin-right: 4%;
-    width: 30.5%;
-    float: left;
-    vertical-align: top; }
-    @media only screen and (max-width: 360px) {
-      .three-columns .single-column {
-        float: none;
-        width: 96%;
-        margin: 0 0 0 2%; } }
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
-      .three-columns .single-column {
-        float: none;
-        width: 90%;
-        margin: 0 0 0 5%; } }
-    .three-columns .single-column:last-child {
-      margin-right: 0; }
-    .three-columns .single-column h1 {
-      font-size: 1.8em;
-      font-weight: 600;
-      line-height: 1.2em;
-      margin-top: 20px; }
-    .three-columns .single-column p {
-      margin-top: 10px; }
+  overflow: auto;
+  margin-right: 4%;
+  width: 30.5%;
+  float: left;
+  vertical-align: top; }
+  @media only screen and (max-width: 360px) {
+    .three-columns .single-column {
+      float: none;
+      width: 96%;
+      margin: 0 0 0 2%; } }
+  @media only screen and (min-width: 360px) and (max-width: 768px) {
+    .three-columns .single-column {
+      float: none;
+      width: 90%;
+      margin: 0 0 0 5%; } }
+  .three-columns .single-column:last-child {
+    margin-right: 0; }
+  .three-columns .single-column h1 {
+    font-size: 1.8em;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-top: 20px; }
+  .three-columns .single-column p {
+    margin-top: 10px; }
 
 .team {
   width: 100%;
-  overflow: auto;
-  padding: 0; }
+  overflow: auto; }
   .team h1 {
     font-size: 1.8em;
     font-weight: 600;
@@ -320,8 +317,7 @@ section {
       padding-left: 10px; }
 
 .schedule {
-  background-color: #d2e7e8;
-  padding-top: 50px; }
+  background-color: white; }
   .schedule h1 {
     font-size: 1.8em;
     font-weight: 600;
@@ -373,9 +369,8 @@ section {
 
 .class-details {
   width: 30%;
-  margin-left: 8%;
-  display: block;
   position: absolute;
+  display: block;
   top: 119px;
   right: 0;
   padding: 10px 20px 10px 20px; }
@@ -394,9 +389,8 @@ section {
     padding-left: 40px; }
 
 .footer {
-  background-color: #04a5af;
-  height: 100%;
-  padding-top: 1%; }
+  overflow: auto;
+  background-color: #04a5af; }
   .footer .single-column a {
     margin: 0 auto; }
   .footer .single-column .contact {
