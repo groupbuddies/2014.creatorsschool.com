@@ -252,6 +252,7 @@ section {
     margin-top: 10px; }
 
 .team {
+  background-color: #d2e7e8;
   width: 100%;
   overflow: auto; }
   .team h1 {
