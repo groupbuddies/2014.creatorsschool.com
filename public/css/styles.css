@@ -232,6 +232,9 @@ section {
           .main-info .container .big-block .map {
             display: none; } }
 
+.passed {
+  text-decoration: line-through; }
+
 .title-block {
   padding-top: 50px;
   display: block; }
