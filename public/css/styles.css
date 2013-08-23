@@ -430,6 +430,11 @@ section {
 .buddies .single-column {
   float: left;
   margin-right: 10%; }
+  .buddies .single-column img {
+    text-align: center;
+    opacity: 0.6; }
+    .buddies .single-column img:hover {
+      opacity: 1; }
 .buddies .wrapper {
   clear: left;
   overflow: auto;
