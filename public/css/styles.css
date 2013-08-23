@@ -419,7 +419,24 @@ section {
     color: white;
     padding-left: 40px; }
 
+.buddies h1 {
+  font-size: 1.8em;
+  font-weight: 600;
+  line-height: 1.2em;
+  border-bottom: 1px solid #36d8b4;
+  padding-bottom: 10px; }
+.buddies h3 {
+  text-align: center; }
+.buddies .single-column {
+  float: left;
+  margin-right: 10%; }
+.buddies .wrapper {
+  clear: left;
+  overflow: auto;
+  margin-bottom: 50px; }
+
 .footer {
+  clear: left;
   overflow: auto;
   background-color: #04a5af; }
   .footer .single-column a {
