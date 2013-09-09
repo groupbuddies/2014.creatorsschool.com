@@ -99,6 +99,7 @@ section {
 .main {
   padding-bottom: 0px; }
   .main .uvp {
+    padding-top: 20px;
     margin: 4% 0 0 2%; }
     @media only screen and (max-width: 360px) {
       .main .uvp {
@@ -467,3 +468,7 @@ section {
       text-align: center; }
     .footer .cta .button {
       margin: auto; }
+
+.sold-out {
+  color: #fb5555;
+  font-size: 40px; }
