@@ -13,12 +13,13 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
   </head>
 
   <body class="<%= page_classes %>">
     <div class="divider"></div>
     <%= yield %>
     <div class="divider"></div>
+
+    <%= javascript_include_tag  "all" %>
   </body>
 </html>

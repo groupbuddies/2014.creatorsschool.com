@@ -1,17 +1,24 @@
-@mixin generateIcon($name)
+@mixin generateIconInBackground($name)
   min-height: $icon-size
   background: url('../images/#{$name}.png')
   background-repeat: no-repeat
   background-size: $icon-size
   background-position: left center
 
+@mixin generateIcon($name)
+  height: $icon-size
+  width: $icon-size
+  +generateIconInBackground($name)
+
 @each $type in $icon-types
   $name: nth($type, 1)
+  .bg-icon-#{$name}
+    +generateIconInBackground($name)
   .icon-#{$name}
     +generateIcon($name)
 
 @each $name in $icon-authors
-  .icon-#{$name}
-    +generateIcon($name)
+  .bg-icon-#{$name}
+    +generateIconInBackground($name)
     &.center
       background-position: center center
