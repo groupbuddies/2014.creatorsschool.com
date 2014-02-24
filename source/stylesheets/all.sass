@@ -1,0 +1,87 @@
+@charset "utf-8"
+
+$default-spacing: 1rem
+$button-height: 40px
+
+$font-size-big: 2rem
+$font-size-medium: 1.5rem
+
+$logo-height: 76px
+
+$dark-oceanblue: #309298
+$oceanblue: #7BD0D6
+$orange: #F5C55F
+$purple: #B491DB
+$white: white
+$soft-blue: #F4F9FA
+
+$twitter-blue: #8CCAF1
+
+$font-family-default: 'futura-pt', 'sans-serif'
+$font-family-secondary: 'pt-serif', 'Georgia'
+
+@import compass
+@import breakpoint
+
+@import buttons
+@import images
+@import typography
+
+$breakpoint-medium-width: 700px
+
+*, *:before, *:after
+  -webkit-font-smoothing: antialiased
+  box-sizing: border-box
+
+html, body
+  font-family: $font-family-default
+  font-size: 18px
+
+h1, h2, h3
+  font-weight: normal
+
+.section
+  padding: 50px
+  &.alt
+    background: $soft-blue
+    p
+      color: $dark-oceanblue
+
+.content
+  text-align: center
+  .video
+    margin: 0 auto
+
+.topic
+  display: inline-block
+  width: 100%
+  vertical-align: top
+  p, .subtitle
+    text-align: left
+  +breakpoint($breakpoint-medium-width)
+    width: 50%
+    &:nth-child(odd)
+      padding-right: $default-spacing / 2
+    &:nth-child(even)
+      padding-left: $default-spacing / 2
+
+.cta
+  text-align: center
+
+.divider
+  height: 5px
+  width: 100%
+  background-image: url('../images/divider.jpg')
+  background-size: contain
+
+.video
+  width: 700px
+  height: 500px
+  background: $soft-blue
+
+.header
+  height: $logo-height
+  > *:first-child
+    float: left
+  > *:last-child
+    float: right
