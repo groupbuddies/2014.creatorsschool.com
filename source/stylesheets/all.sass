@@ -3,6 +3,9 @@
 $default-spacing: 1rem
 $button-height: 40px
 
+$breakpoint-medium-width: 700px
+$gutter: $default-spacing * 2
+
 $font-size-big: 2rem
 $font-size-medium: 1.5rem
 
@@ -14,6 +17,7 @@ $orange: #F5C55F
 $purple: #B491DB
 $white: white
 $soft-blue: #F4F9FA
+$grey: #666666
 
 $twitter-blue: #8CCAF1
 
@@ -28,7 +32,6 @@ $font-family-secondary: 'pt-serif', 'Georgia'
 @import typography
 @import bubble
 
-$breakpoint-medium-width: 700px
 
 *, *:before, *:after
   -webkit-font-smoothing: antialiased
@@ -37,6 +40,7 @@ $breakpoint-medium-width: 700px
 html, body
   font-family: $font-family-default
   font-size: 18px
+  color: $grey
 
 h1, h2, h3
   font-weight: normal
@@ -62,17 +66,25 @@ h1, h2, h3
   +breakpoint($breakpoint-medium-width)
     width: 50%
     &:nth-child(odd)
-      padding-right: $default-spacing / 2
+      padding-right: $gutter / 2
     &:nth-child(even)
-      padding-left: $default-spacing / 2
+      padding-left: $gutter / 2
 
 .cta
   text-align: center
 
-.say
-  border: 1px solid $soft-blue
-  padding: $default-spacing
-  +border-radius(30px)
+.testimony
+  display: inline-block
+  width: 100%
+  h1, h2, h3
+    text-align: center
+  +breakpoint($breakpoint-medium-width)
+    width: 50%
+    &:nth-child(even)
+      padding-right: $gutter / 2
+    &:nth-child(odd)
+      padding-left: $gutter / 2
+
 
 .divider
   height: 5px
