@@ -32,6 +32,8 @@ h1, h2, h3
       color: $dark-oceanblue
 
 .content
+  margin: 0 auto
+  max-width: 1000px
   text-align: center
   .video
     margin: 0 auto
@@ -60,6 +62,7 @@ h1, h2, h3
   width: 100%
   h1, h2, h3
     text-align: center
+  [class^="image"]
   +breakpoint($breakpoint-medium-width)
     width: 50%
     &:nth-child(even)

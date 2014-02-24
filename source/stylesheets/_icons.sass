@@ -13,3 +13,5 @@
 @each $name in $icon-authors
   .icon-#{$name}
     +generateIcon($name)
+    &.center
+      background-position: center center
