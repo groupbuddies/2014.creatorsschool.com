@@ -24,8 +24,14 @@ html, body
 h1, h2, h3
   font-weight: normal
 
+p
+  margin: 0
+  margin-bottom: $default-spacing
+
 .section
   padding: 50px
+  .video-container
+    margin: $default-spacing * 4
   &.alt
     background: $soft-blue
     p
@@ -56,12 +62,16 @@ h1, h2, h3
 
 .cta
   text-align: center
+  p
+    color: $dark-oceanblue
 
 .testimony
   display: inline-block
   width: 100%
   h1, h2, h3
     text-align: center
+  .bubble
+    margin-top: $default-spacing * 1.5
   [class^="image"]
   +breakpoint($breakpoint-medium-width)
     width: 50%
@@ -77,7 +87,7 @@ h1, h2, h3
   background-size: contain
 
 .header
-  height: $logo-height
+  overflow: auto
   > *:first-child
     float: left
   > *:last-child
