@@ -1,14 +1,22 @@
 @each $type in $icon-types
-  .subtitle.icon-#{$type}
+  $name: nth($type, 1)
+  .subtitle.icon-#{$name}
     padding-left: 60px
 
-.subtitle.dot:after
-  +border-radius(50%)
-  content: ''
-  display: block
-  position: absolute
-  top: calc(50% - #{$dot-size} / 2)
-  right: 0
-  width: $dot-size
-  height: $dot-size
-  background: $oceanblue
+@each $name in $icon-authors
+  .icon-#{$name}
+    padding-left: 60px
+
+@each $type in $icon-types
+  $name: nth($type, 1)
+  $color: nth($type, 2)
+  .subtitle.dot-#{$name}:after
+    +border-radius(50%)
+    content: ''
+    display: block
+    position: absolute
+    top: calc(50% - #{$dot-size} / 2)
+    right: 0
+    width: $dot-size
+    height: $dot-size
+    background: $color
