@@ -10,6 +10,9 @@
 @each $type in $icon-types
   $name: nth($type, 1)
   $color: nth($type, 2)
+  .subtitle.dot-#{$name}
+    display: inline-block
+    padding-right: $dot-size * 2
   .subtitle.dot-#{$name}:after
     +border-radius(50%)
     content: ''
