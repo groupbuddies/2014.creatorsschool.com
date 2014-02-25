@@ -11,28 +11,26 @@ button, .button
   font-weight: lighter
   color: $white
   +transition-property(all)
-  +transition-duration(.2s)
+  +transition-duration(.1s)
   +transition-timing-function(ease-in)
   &:hover
     +scale(1.1)
     font-weight: normal
-
-.button.alt
-  background: white
-  border: 1px solid $purple
-  color: $purple
+    -webkit-animation: camuflage 1s linear
+    -webkit-animation-fill-mode: forwards
 
 .handler
   +border-radius($button-height)
-  display: block
+  display: inline-block
   border: 1px solid $twitter-blue
-  padding-left: 40px
+  padding-left: 25px + $fixed-spacing * 1.5
+  padding-right: $fixed-spacing
   height: $button-height
-  max-width: 250px
+  //max-width: 200px
   background-image: url('../images/twitter.png')
   background-repeat: no-repeat
   background-size: 25px 25px
-  background-position: $default-spacing center
+  background-position: $fixed-spacing center
   color: $twitter-blue
   line-height: $button-height
   text-decoration: none

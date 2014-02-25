@@ -11,6 +11,21 @@
 @import typography
 @import bubble
 
+// keyframes mixin
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+
++keyframes(camuflage)
+  100%
+    background: $oceanblue
 
 *, *:before, *:after
   -webkit-font-smoothing: antialiased
@@ -31,7 +46,7 @@ p
 hr
   margin-top: $gutter
   border: 0
-  border-top: 1px solid $oceanblue
+  border-top: 1px solid $soft-grey
   padding: 0
 
 .section
@@ -83,7 +98,7 @@ hr
 
 .cta
   padding-bottom: $fixed-spacing
-  width: $button-width + $fixed-spacing
+  width: $button-width + $fixed-spacing * 4
   text-align: center
   p
     color: $dark-oceanblue
