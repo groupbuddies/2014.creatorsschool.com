@@ -6,9 +6,16 @@ button, .button
   padding-left: 1rem
   padding-right: 1rem
   height: $button-height
+  min-width: $button-width
   background: $purple
   font-weight: lighter
   color: $white
+  +transition-property(all)
+  +transition-duration(.2s)
+  +transition-timing-function(ease-in)
+  &:hover
+    +scale(1.1)
+    font-weight: normal
 
 .button.alt
   background: white
