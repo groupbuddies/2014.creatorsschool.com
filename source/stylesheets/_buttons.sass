@@ -26,7 +26,6 @@ button, .button
   padding-left: 25px + $fixed-spacing * 1.5
   padding-right: $fixed-spacing
   height: $button-height
-  //max-width: 200px
   background-image: url('../images/twitter.png')
   background-repeat: no-repeat
   background-size: 25px 25px
@@ -34,3 +33,22 @@ button, .button
   color: $twitter-blue
   line-height: $button-height
   text-decoration: none
+  &, span, &:before
+    +transition-property(none)
+  &:before
+    +opacity(0)
+    content: 'Follow'
+    position: absolute
+  &:hover
+    &, span, &:before
+      +transition-property(all)
+      +transition-duration(.3s)
+      +transition-timing-function(ease-in)
+    background-image: url('../images/twitter-alt.png')
+    background-color: $twitter-blue
+    color: white
+    span
+      visibility: hidden
+    &:before
+      +opacity(1)
+
