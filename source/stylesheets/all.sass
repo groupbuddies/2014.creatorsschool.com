@@ -33,8 +33,10 @@
 
 html, body
   font-family: $font-family-default
-  font-size: 18px
+  font-size: 16px
   color: $grey
+  +breakpoint($breakpoint-medium-width)
+    font-size: 18px
 
 h1, h2, h3
   font-weight: normal
@@ -50,9 +52,11 @@ hr
   padding: 0
 
 .section
-  padding: 25px 50px
+  padding: 40px 25px
+  +breakpoint($breakpoint-medium-width)
+    padding: 45px 50px
   .video-container
-    margin: $default-spacing * 4
+    margin: $default-spacing * 4 auto
   &.alt
     background: $soft-blue
     p
@@ -127,9 +131,15 @@ hr
 .header
   overflow: auto
   > *:first-child
-    float: left
+    width: 100%
+    background-position: center center
   > *:last-child
-    float: right
+    display: none
+  +breakpoint($breakpoint-medium-width)
+    > *:first-child
+      float: left
+    > *:last-child
+      float: right
 
 .video-container
   position: relative
