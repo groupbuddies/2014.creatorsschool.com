@@ -55,7 +55,7 @@ hr
 
 .local
   padding-bottom: $fixed-spacing
-  a 
+  a
     margin: 0
     margin-bottom: $default-spacing
     color: $dark-oceanblue
@@ -74,6 +74,24 @@ hr
     background: $soft-blue
     p
       color: $dark-oceanblue
+
+
+.pricing-table
+  background-color: $white
+  border-radius: 10px
+  .pricing-item
+    list-style: none
+
+.pricing-item
+  > *
+    display: inline-block
+  > *:first-child
+    width: 50%
+
+  > *:not(:first-child)
+    width: 25%
+  .subtitle
+    text-align: left
 
 .content
   margin: 0 auto
