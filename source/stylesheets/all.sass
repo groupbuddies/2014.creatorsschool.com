@@ -1,5 +1,6 @@
 @charset "utf-8"
 @import variables
+@import font-awesome
 
 @import compass
 @import breakpoint
@@ -10,6 +11,7 @@
 @import headers
 @import typography
 @import bubble
+
 
 // keyframes mixin
 =keyframes($name)
@@ -50,6 +52,17 @@ hr
   border: 0
   border-top: 1px solid $soft-grey
   padding: 0
+
+.local
+  padding-bottom: $fixed-spacing
+  a 
+    margin: 0
+    margin-bottom: $default-spacing
+    color: $dark-oceanblue
+
+  i
+    color: $dark-oceanblue
+    padding-right: 4px
 
 .section
   padding: 40px 25px
